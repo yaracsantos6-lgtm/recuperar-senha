@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Aluno</h1>
+
+        <form>
+            <div class="form-control">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" />
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="email" id="email" />
+            </div>
+
+            <div class="form-control">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" />
+            </div>
+
+            <div class="form-control">
+                <label for="data">Dada de nascimento: </label>
+                <input type="date" name="data" />
+            </div>
+
+            <div class="form-control">
+                <label for="curso">Curso:</label>
+
+                <select name="curso" id="curso">
+                    <option value="">Selecione</option>
+                    <option value="informatica">Informática</option>
+                    <option value="programacao">Programação</option>
+                    <option value="web">Desenvolvimento Web</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>

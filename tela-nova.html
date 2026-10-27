@@ -1,64 +1,47 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Recuperar Senha - Hogwarts</title>
+    <link rel="stylesheet" href="recuperar.css">
 </head>
-
 <body>
 
     <div class="container">
+        <div class="icone">⚡</div>
 
         <h1>Hogwarts</h1>
-        <p>Entre no mundo da magia!</p>
+        <p class="subtitulo">Escola de Magia e Bruxaria</p>
+
+        <div class="livro">📖</div>
+
+        <h2>Esqueceu sua senha?</h2>
+
+        <p class="mensagem">
+            Não se preocupe, jovem bruxo!
+            Digite seu e-mail para recuperar sua senha.
+        </p>
 
         <form>
             <div class="form-control">
-                <label for="login">Login:</label>
-                <input type="text" id="login" placeholder="Digite seu login">
+                <label for="email">✉️ E-mail cadastrado:</label>
+                <input type="email" id="email"
+                    placeholder="Digite seu e-mail" required>
             </div>
 
-            <div class="form-control">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail">
-            </div>
-
-            <div class="form-control">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" placeholder="Digite sua senha">
-            </div>
-
-            <div class="opcoes">
-                <input type="checkbox" id="lembrar">
-                <label for="lembrar">Lembrar meu login</label>
-            </div>
-
-            <div class="form-control">
-                <label>Tipo de acesso:</label>
-
-                <div class="opcoes">
-                    <input type="radio" name="tipo" id="aluno">
-                    <label for="aluno">Aluno</label>
-
-                    <input type="radio" name="tipo" id="professor">
-                    <label for="professor">Professor</label>
-                </div>
-            </div>
-
-            <button type="submit">Entrar</button>
-
-            <a href="esqueci-senha.html">Esqueci minha senha</a>
+            <button type="submit">✨ Recuperar minha senha</button>
         </form>
 
+        <a href="esqueci-minha-senha.html"class="voltar">
+            ← Voltar para o login
+        </a>
+
+        <div class="estrelas">✦ ✧ ✦ ✧ ✦</div>
+
+        <footer>Hogwarts — Onde a magia acontece!</footer>
     </div>
 
 </body>
 </html>
-
-         
-
-

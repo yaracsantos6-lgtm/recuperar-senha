@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha | Hogwarts</title>
+    <link rel="stylesheet" href="recuperar.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="icone">⚡</div>
+        <h1>Hogwarts</h1>
+        <p class="subtitulo">Escola de Magia e Bruxaria</p>
+
+        <div class="livro">📖</div>
+
+        <h2>Esqueceu sua senha?</h2>
+        <p class="mensagem">
+            Não se preocupe, jovem bruxo!
+            Digite seu e-mail cadastrado para iniciar
+            a recuperação da sua senha.
+        </p>
+
+        <form id="form-recuperacao">
+            <div class="form-control">
+                <label for="email">✉️ E-mail cadastrado</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Digite seu e-mail" required>
+            </div>
+
+            <button type="submit">✨ Recuperar minha senha</button>
+            <p id="retorno" role="status"></p>
+        </form>
+
+        <a href="login.html" class="link">← Voltar para o login</a>
+
+        <p class="rodape">✦ A magia começa aqui ✦</p>
+    </main>
+
+    <script>
+        document.getElementById("form-recuperacao")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                document.getElementById("retorno").textContent =
+                    "Formulário preenchido! Para recuperar sua senha de verdade, é necessário conectar um sistema de envio de e-mail.";
+            });
+    </script>
+
+</body>
+</html>
